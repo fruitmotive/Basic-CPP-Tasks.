@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1558340278 source:c:\users\vlad\desktop\Прога\2 семестр\swap&&cout\main.cpp
+	<iostream>
+	<cstdlib>
+	<time.h>
+

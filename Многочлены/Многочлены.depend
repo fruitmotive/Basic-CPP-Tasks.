@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1555933712 source:c:\users\vlad\desktop\Прога\2 семестр\Многочлены\main.cpp
+	<iostream>
+	<cstdlib>
+	<time.h>
+

@@ -1,0 +1,62 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+
+//filler
+void masrand(int N, int i, int *a){
+ if(i<N) {
+    a[i]=(rand()*89)/RAND_MAX+10;
+    ++i;
+    masrand(N,i, a);
+ }
+ else return ;
+}
+
+void output(int N, int i, int* m){
+  if(i<N){
+  printf("%d ",m[i]);
+  ++i;
+  output(N,i,m);
+  }
+  else return ;
+}
+
+//N - number of elements
+//c - number in parts
+//
+int  tree (int i, int c, int beg, int la, int ra, int *a, int *b){
+
+ if(c>=2){
+    la =tree(2*i+1, c/2,beg    ,0,0, a, b);
+    ra =tree(2*i+2, c/2,beg+c/2,0,0, a, b);
+    if ( la >= ra) {
+      b[i]= la;
+      return la ;
+    }
+    else{
+    b[i]=ra;
+    return ra;
+    }
+ }
+ else{
+ b[i]=a[beg] ;
+ return a[beg];
+ }
+}
+
+int main()
+{
+int N;
+int *a, *b;
+srand(time(NULL));
+scanf("%d",&N);   // number of elements
+a=(int *)malloc(N*sizeof(int));  //start massive
+b=(int *)malloc((2*N-1)*sizeof(int)); //end massive
+
+  masrand(N,0,a); //filler A
+  output (N,0,a);
+  tree   (0,N,0,0,0,a,b);
+  printf ("\n");
+  output (2*N-1,0,b);
+}

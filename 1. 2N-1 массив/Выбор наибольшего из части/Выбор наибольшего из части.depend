@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1550700601 source:c:\users\vlad\desktop\Прога\2 семестр\Выбор наибольшего из части\main.c
+	<stdio.h>
+	<stdlib.h>
+

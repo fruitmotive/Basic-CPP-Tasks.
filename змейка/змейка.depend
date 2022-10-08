@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1573239750 source:c:\users\vlad\desktop\Прога\2 семестр\змейка\main.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<conio.h>
+
+1573240235 source:c:\users\vlad\desktop\proga\2 семестр\змейка\main.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<conio.h>
+

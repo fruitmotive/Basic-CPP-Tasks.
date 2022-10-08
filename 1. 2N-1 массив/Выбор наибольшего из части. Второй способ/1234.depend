@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1550838034 source:c:\users\vlad\desktop\Прога\2 семестр\1234\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1551076855 source:c:\users\vlad\desktop\Прога\2 семестр\Выбор наибольшего из части. Второй способ\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1551076855 source:c:\users\vlad\desktop\Прога\2 семестр\1. 2n-1 массив\Выбор наибольшего из части. Второй способ\main.c
+	<stdio.h>
+	<stdlib.h>
+
